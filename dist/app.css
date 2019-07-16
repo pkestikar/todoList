@@ -1,1 +1,1 @@
-.test{background:yellow;color:blue}.test:hover{background:black;color:white}
+.todo__main{height:100%;width:100%;position:fixed;padding:0;margin:0}.todo__main .content-wrapper{height:100%;width:100%;background:rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center}.todo-pad{max-width:1500px;max-height:800px;width:80%;height:80%;background:white}

@@ -1,9 +1,16 @@
-.test {
-  background: yellow;
-  color: blue;
-}
+.todo__main {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  .content-wrapper {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
 
-.test:hover {
-  background: black;
-  color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
