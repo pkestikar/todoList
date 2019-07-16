@@ -12,5 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .cover-half {
+      right: 0;
+      height: 100%;
+      width: 50%;
+      background: orange;
+      position: absolute;
+
+      @include breakpoint(medium down) {
+        display: none;
+      }
+    }
   }
 }

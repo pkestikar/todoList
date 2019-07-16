@@ -12,7 +12,8 @@ class TodoList extends Component {
 
         return (
             <div className={classname} style={{background: "url('./images/building.jpg')"}}>
-                <div className="content-wrapper">
+                <div className='content-wrapper'>
+                    <span className={'cover-half'}></span>
                     <TodoPad/>
                 </div>
             </div>
