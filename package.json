@@ -1,0 +1,33 @@
+{
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "An attempt to clone a todo list web app design from dribble and get it working. A react project.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rimraf ./dist/main.js && webpack --config ./webpack.dev.config.js --watch --colors --progress",
+    "build": "rimraf ./dist/main.js && webpack --config ./webpack.production.config.js --watch --colors --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkestikar/todoList.git"
+  },
+  "author": "Prathmesh Kestikar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkestikar/todoList/issues"
+  },
+  "homepage": "https://github.com/pkestikar/todoList#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
