@@ -4,8 +4,12 @@
   "description": "An attempt to clone a todo list web app design from dribble and get it working. A react project.",
   "main": "index.js",
   "scripts": {
-    "dev": "rimraf ./dist/main.js && webpack --config ./webpack.dev.config.js --watch --colors --progress",
-    "build": "rimraf ./dist/main.js && webpack --config ./webpack.production.config.js --watch --colors --progress"
+    "watchJs": "rimraf ./dist/main.js && webpack --config ./webpack.dev.config.js --watch --colors --progress",
+    "buildJs": "rimraf ./dist/main.js && webpack --config ./webpack.production.config.js --colors --progress",
+    "watchAssets": "gulp watchSass",
+    "buildAssets": "gulp buildSass",
+    "dev": "concurrently 'npm:watchJs' 'npm:watchAssets'",
+    "build": "concurrently 'npm:buildJs' 'npm:buildSass'"
   },
   "repository": {
     "type": "git",
@@ -22,12 +26,19 @@
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.1",
+    "css-loader": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
     "rimraf": "^2.6.3",
     "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6"
   }
