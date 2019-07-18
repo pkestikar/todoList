@@ -106,7 +106,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar TodoPad = function TodoPad(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"todo-pad\"\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (TodoPad);\n\n//# sourceURL=webpack:///./app/components/TodoPad/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var Components_TopBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Components/TopBar */ \"./app/components/TopBar/index.js\");\n\n\n\nvar TodoPad = function TodoPad(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"todo-pad\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_TopBar__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (TodoPad);\n\n//# sourceURL=webpack:///./app/components/TodoPad/index.js?");
+
+/***/ }),
+
+/***/ "./app/components/TopBar/index.js":
+/*!****************************************!*\
+  !*** ./app/components/TopBar/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar TopBar = function TopBar() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"top-bar\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"title\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h3\", null, \"to-do list\")));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (TopBar);\n\n//# sourceURL=webpack:///./app/components/TopBar/index.js?");
 
 /***/ }),
 
