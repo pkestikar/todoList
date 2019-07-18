@@ -25,5 +25,10 @@ module.exports = {
                 ]
             }
         ]
+    },
+    resolve: {
+        alias: {
+            Components: path.resolve(__dirname, 'app/components/')
+        }
     }
 };
