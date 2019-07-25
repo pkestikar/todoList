@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TopBar from 'Components/TopBar';
+import TaskCard from 'Components/TaskCard';
 
 const TodoPad = (props) => {
     return (
@@ -18,7 +19,7 @@ const TodoPad = (props) => {
                         </p>
                     </div>
                     <div className="the-list">
-
+                        <TaskCard />
                     </div>
                 </div>
             </div>

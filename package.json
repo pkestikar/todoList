@@ -9,7 +9,7 @@
     "watchAssets": "gulp watchSass",
     "buildAssets": "gulp buildSass",
     "dev": "concurrently 'npm:watchJs' 'npm:watchAssets'",
-    "build": "concurrently 'npm:buildJs' 'npm:buildSass'"
+    "build": "concurrently 'npm:buildJs' 'npm:buildAssets'"
   },
   "repository": {
     "type": "git",
