@@ -1,7 +1,11 @@
 .top-bar {
-  height: 55px;
+  height: 60px;
   display: flex;
   align-items: center;
-  padding-left: 1rem;
+  //padding-left: 1rem;
   background: transparent;
+  margin-top: 2rem;
+  .title {
+    font-size: 1.4rem;
+  }
 }

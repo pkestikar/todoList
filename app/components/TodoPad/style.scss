@@ -10,8 +10,33 @@
   background: white;
   border-radius: 3px;
   position: absolute;
+  display: flex;
+  justify-content: center;
 
   box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+
+  .todo-pad-content {
+    height: 100%;
+    width: 85%;
+    .todo-wrapper {
+      height: 85%;
+      display: flex;
+      .message {
+        height: 100%;
+        width: 50%;
+        p {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-top: 5rem;
+        }
+      }
+      .the-list {
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+    }
+  }
 }
