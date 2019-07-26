@@ -10,7 +10,7 @@ const TodoPad = (props) => {
                 <div className="todo-wrapper">
                     <div className="message">
                         <p>
-                            Hello {'<user>'}, <br/>
+                            Hello there!, <br/>
                             welcome back. <br/>
                             You have {'<count>'} <br/>
                             remaining tasks <br/>
@@ -19,7 +19,15 @@ const TodoPad = (props) => {
                         </p>
                     </div>
                     <div className="the-list">
-                        <TaskCard />
+                        <TaskCard
+                            taskText={'This is the first task in here.'}
+                            category={'home'}
+                        />
+
+                        <TaskCard
+                            taskText={'This is the second task in here with some longer text that should fit in there.'}
+                            category={'travel'}
+                        />
                     </div>
                 </div>
             </div>
