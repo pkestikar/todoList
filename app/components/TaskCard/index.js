@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Icon from 'Components/Icon';
 
 const TaskCard = (props) => {
     return (
@@ -10,6 +11,9 @@ const TaskCard = (props) => {
                 <div className="task-text">
                     {props.taskText}
                 </div>
+                <span className="category-icon">
+                    <Icon icon={'plane'} size={'13px'}/>
+                </span>
             </div>
         </div>
     )

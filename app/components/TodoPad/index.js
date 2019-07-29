@@ -28,6 +28,32 @@ const TodoPad = (props) => {
                             taskText={'This is the second task in here with some longer text that should fit in there.'}
                             category={'travel'}
                         />
+
+                        <TaskCard
+                            taskText={'This is the first task in here.'}
+                            category={'home'}
+                        />
+                        <TaskCard
+                            taskText={'This is the first task in here.'}
+                            category={'home'}
+                        />
+                        <TaskCard
+                            taskText={'This is the first task in here.'}
+                            category={'home'}
+                        />
+                        <TaskCard
+                            taskText={'This is the first task in here.'}
+                            category={'home'}
+                        />
+                        <TaskCard
+                            taskText={'This is the first task in here.'}
+                            category={'home'}
+                        />
+                        <TaskCard
+                            taskText={'This is the first task in here.'}
+                            category={'home'}
+                        />
+
                     </div>
                 </div>
             </div>
