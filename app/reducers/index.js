@@ -6,8 +6,8 @@ const initialState = {
     todoList: []
 };
 
-const rootReducer = combineReducers(
+const rootReducer = combineReducers({
     addItem
-);
+});
 
 export default rootReducer;

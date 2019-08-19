@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import TopBar from 'Components/TopBar';
 import TaskCard from 'Components/TaskCard';
+import AddItemButton from 'Components/AddItemButton';
 
 const TodoPad = (props) => {
     return (
         <div className="todo-pad">
             <div className="todo-pad-content">
                 <TopBar/>
+                <AddItemButton/>
                 <div className="todo-wrapper">
                     <div className="message">
                         <p>

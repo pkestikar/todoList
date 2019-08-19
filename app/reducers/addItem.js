@@ -10,4 +10,6 @@ export default function addItem(state = initialState, action) {
             todoList: state.todoList.concat(action.itemData)
         })
     }
+
+    return state;
 }
