@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TopBar from 'Components/TopBar';
 import TaskCard from 'Components/TaskCard';
 import AddItemButton from 'Components/AddItemButton';
+import { connect } from 'react-redux';
 
 const TodoPad = (props) => {
     return (
@@ -21,41 +22,16 @@ const TodoPad = (props) => {
                         </p>
                     </div>
                     <div className="the-list">
-                        <TaskCard
-                            taskText={'This is the first task in here.'}
-                            category={'home'}
-                        />
-
-                        <TaskCard
-                            taskText={'This is the second task in here with some longer text that should fit in there.'}
-                            category={'travel'}
-                        />
-
-                        <TaskCard
-                            taskText={'This is the first task in here.'}
-                            category={'home'}
-                        />
-                        <TaskCard
-                            taskText={'This is the first task in here.'}
-                            category={'home'}
-                        />
-                        <TaskCard
-                            taskText={'This is the first task in here.'}
-                            category={'home'}
-                        />
-                        <TaskCard
-                            taskText={'This is the first task in here.'}
-                            category={'home'}
-                        />
-                        <TaskCard
-                            taskText={'This is the first task in here.'}
-                            category={'home'}
-                        />
-                        <TaskCard
-                            taskText={'This is the first task in here.'}
-                            category={'home'}
-                        />
-
+                        {props.todoList.map(todo => {
+                            return (
+                                <TaskCard
+                                    taskText={todo.title}
+                                    category={'home'}
+                                    key={`${Math.random() * 1000}`}
+                                />
+                            )
+                        })
+                        }
                     </div>
                 </div>
             </div>
@@ -63,4 +39,16 @@ const TodoPad = (props) => {
     )
 };
 
-export default TodoPad;
+const mapStateToProps = state => {
+    return {
+        todoList: state.todoList
+    }
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodoPad);

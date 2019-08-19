@@ -1,4 +1,4 @@
-import { ADD_ITEM } from "../constants";
+import { ADD_ITEM } from "Constants";
 
 export function addItem(itemData) {
     return {

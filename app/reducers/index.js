@@ -1,13 +1,25 @@
 import { ADD_ITEM } from "../constants";
-import { combineReducers } from 'redux';
-import addItem from './addItem';
 
 const initialState = {
-    todoList: []
+    todoList: [
+        {
+            title: 'Go to the gym'
+        },
+        {
+            title: 'Buy tickets to something'
+        },
+        {
+            title: 'Get a haircut you filthy'
+        }
+    ]
 };
 
-const rootReducer = combineReducers({
-    addItem
-});
+export default function rootReducer(state = initialState, action) {
+    if (action.type === ADD_ITEM) {
+        return Object.assign({}, state, {
+            todoList: state.todoList.concat(action.itemData)
+        })
+    }
 
-export default rootReducer;
+    return state;
+}
