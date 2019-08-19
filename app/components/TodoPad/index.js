@@ -15,7 +15,7 @@ const TodoPad = (props) => {
                         <p>
                             Hello there!, <br/>
                             welcome back. <br/>
-                            You have {'<count>'} <br/>
+                            You have {props.todoList.length} <br/>
                             remaining tasks <br/>
                             to complete <br/>
                             this week. <br/>
