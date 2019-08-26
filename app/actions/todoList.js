@@ -1,6 +1,6 @@
 import { ADD_ITEM } from "Constants";
 
-export function addItem(itemData) {
+export function todoList(itemData) {
     return {
         type: ADD_ITEM,
         itemData

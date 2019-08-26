@@ -5,6 +5,11 @@ import AddItemButton from 'Components/AddItemButton';
 import { connect } from 'react-redux';
 
 const TodoPad = (props) => {
+    if (!props.todoList) {
+        console.log('state:');
+        console.log(props.state);
+        return null;
+    }
     return (
         <div className="todo-pad">
             <div className="todo-pad-content">
@@ -41,6 +46,7 @@ const TodoPad = (props) => {
 
 const mapStateToProps = state => {
     return {
+        state: state,
         todoList: state.todoList
     }
 };

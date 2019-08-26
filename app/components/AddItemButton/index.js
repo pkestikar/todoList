@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Icon from 'Components/Icon';
 import { connect } from 'react-redux';
-import { addItem } from "Actions/addItem";
+import { todoList } from "Actions/todoList";
+import { showModal, hideModal } from 'Actions/modal';
 
 const AddItemButton = props => {
     const handleClick = () => {
-        props.addItem({'title': 'a first todo insert in redux'})
+        // props.addItem({'title': 'a first todo insert in redux'})
+        props.showDefaultModal();
         console.log('currentState:');
         console.log(props.currentState);
     };
@@ -25,7 +27,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addItem: (itemData) => dispatch(addItem(itemData))
+        addItem: (itemData) => dispatch(todoList(itemData)),
+        showDefaultModal: () => dispatch(showModal('DEFAULT_MODAL')),
+        hideDefaultModal: () => dispatch(hideModal('DEFAULT_MODAL'))
     }
 };
 
