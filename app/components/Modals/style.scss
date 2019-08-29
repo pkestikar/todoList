@@ -10,12 +10,13 @@
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   .modal__default {
     height: 500px;
     width: 400px;
     display: flex;
     justify-content: center;
     align-content: center;
+    background: white;
   }
 }
