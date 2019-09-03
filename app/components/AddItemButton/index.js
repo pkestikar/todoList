@@ -7,7 +7,7 @@ import { showModal, hideModal } from 'Actions/modal';
 const AddItemButton = props => {
     const handleClick = () => {
         // props.addItem({'title': 'a first todo insert in redux'})
-        props.showDefaultModal();
+        props.showAddTodoModal();
         console.log('currentState:');
         console.log(props.currentState);
     };
@@ -28,8 +28,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         addItem: (itemData) => dispatch(todoList(itemData)),
-        showDefaultModal: () => dispatch(showModal('DEFAULT_MODAL')),
-        hideDefaultModal: () => dispatch(hideModal('DEFAULT_MODAL'))
+        showAddTodoModal: () => dispatch(showModal('ADD_TODO_MODAL')),
+        hideAddTodoModal: () => dispatch(hideModal('ADD_TODO_MODAL'))
     }
 };
 
