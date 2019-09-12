@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Icon from 'Components/Icon';
+import {hideModal} from "../../actions/modal";
 
 const AddTodoModal = props => {
     return (
         <div className={'modal__add-todo'}>
-            <div className="close-button">
+            <div className="close-button" onClick={() => props.hideAddTodoModal()}>
                 <Icon icon={'close'}/>
             </div>
         </div>
@@ -20,7 +21,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-
+        hideAddTodoModal: () => dispatch(hideModal('ADD_TODO_MODAL'))
     }
 };
 

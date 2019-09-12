@@ -4,12 +4,14 @@
   "description": "An attempt to clone a todo list web app design from dribble and get it working. A react project.",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.dev.config.js --open --colors --progress",
     "watchJs": "rimraf ./dist/main.js && webpack --config ./webpack.dev.config.js --watch --colors --progress",
     "buildJs": "rimraf ./dist/main.js && webpack --config ./webpack.production.config.js --colors --progress",
     "watchAssets": "gulp watchSass",
     "buildAssets": "gulp buildSass",
     "dev": "concurrently 'npm:watchJs' 'npm:watchAssets'",
-    "build": "concurrently 'npm:buildJs' 'npm:buildAssets'"
+    "build": "concurrently 'npm:buildJs' 'npm:buildAssets'",
+    "devServer": "concurrently 'npm:start' 'npm:watchJs' 'npm:watchAssets'"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-onclickoutside": "^6.9.0",
     "react-redux": "^7.1.0",
     "react-svg": "^10.0.13",
     "redux": "^4.0.4",
@@ -44,6 +47,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
   }
 }

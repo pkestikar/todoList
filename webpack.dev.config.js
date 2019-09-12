@@ -33,5 +33,9 @@ module.exports = {
             Actions: path.resolve(__dirname, 'app/actions'),
             Reducers: path.resolve(__dirname, 'app/reducers')
         }
+    },
+    devServer: {
+        contentBase: path.resolve(__dirname, ''),
+        port: 8080
     }
 };

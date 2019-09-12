@@ -19,19 +19,19 @@ const Icon = props => {
         width: props.size
     };
 
-    // return (
-    //     <ReactSVG
-    //         wrapper={'span'}
-    //         style={style}
-    //         src={`./images/svg/${props.icon}.svg`}
-    //         className={iconClasses}
-    //         onClick={props.onClick}
-    //     />
-    // )
-
     return (
-        <img style={style} src={`./images/svg/${props.icon}.svg`} alt=""/>
+        <ReactSVG
+            wrapper={'span'}
+            style={style}
+            src={`./images/svg/${props.icon}.svg`}
+            className={iconClasses}
+            onClick={props.onClick}
+        />
     )
+
+    // return (
+    //     <img style={style} src={`./images/svg/${props.icon}.svg`} alt=""/>
+    // )
 };
 
 Icon.defaultProps = {
