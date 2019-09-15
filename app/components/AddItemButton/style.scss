@@ -1,0 +1,41 @@
+.add-item-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: all ease 0.2s;
+
+  -webkit-box-shadow: 4px 0px 10px -6px rgba(0,0,0,0.28);
+  -moz-box-shadow: 4px 0px 10px -6px rgba(0,0,0,0.28);
+  box-shadow: 4px 0px 10px -6px rgba(0,0,0,0.28);
+
+  @include breakpoint(small down) {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    top: unset;
+    left: unset;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    z-index: 50;
+  }
+}
+
+.add-item-container:hover {
+  -webkit-box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
+  -moz-box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
+  box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
+}
+
+.add-item-container:active {
+  -webkit-box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
+  -moz-box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
+  box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
+}

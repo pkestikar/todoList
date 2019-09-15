@@ -1,0 +1,46 @@
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal__default {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+  }
+
+  .modal__add-todo {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    position: relative;
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      height: 23px;
+      width: 23px;
+    }
+    .close-button:hover {
+      transform: rotateZ(180deg);
+    }
+  }
+}
