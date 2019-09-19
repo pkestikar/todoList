@@ -23,12 +23,13 @@
 
   .modal__add-todo {
     height: 500px;
-    width: 400px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-content: center;
     background: white;
     position: relative;
+    border-radius: 3px;
     .close-button {
       position: absolute;
       top: 0;
@@ -41,6 +42,21 @@
     }
     .close-button:hover {
       transform: rotateZ(180deg);
+    }
+
+    .input-wrapper {
+      margin: 3rem;
+      width: 100%;
+      input {
+        height: 2rem;
+        font-family: var(--app-font-family);
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+      }
     }
   }
 }
