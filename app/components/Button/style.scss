@@ -1,0 +1,29 @@
+.button__base {
+  background: #FAF8F8;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: 1px solid #e8e6e6;
+  outline: none;
+  font-family: var(--app-font-family);
+
+  -webkit-box-shadow: 4px 0px 10px -6px rgba(0,0,0,0.28);
+  -moz-box-shadow: 4px 0px 10px -6px rgba(0,0,0,0.28);
+  box-shadow: 4px 0px 10px -6px rgba(0,0,0,0.28);
+
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+}
+
+.button__base:hover {
+  -webkit-box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
+  -moz-box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
+  box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
+}
+
+.button__base:active {
+  -webkit-box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
+  -moz-box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
+  box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
+}

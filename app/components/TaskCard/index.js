@@ -12,7 +12,7 @@ const TaskCard = (props) => {
                     {props.taskText}
                 </div>
                 <span className="category-icon">
-                    <Icon icon={'plane'} size={'13px'}/>
+                    <Icon icon={'plane'} size={'15px'}/>
                 </span>
             </div>
         </div>
