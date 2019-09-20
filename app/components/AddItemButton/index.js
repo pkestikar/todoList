@@ -6,7 +6,7 @@ import { showModal, hideModal } from 'Actions/modal';
 
 const AddItemButton = props => {
     const handleClick = () => {
-        // props.addItem({'title': 'a first todo insert in redux'})
+        // props.addItem({'title': 'a first to-do insert in redux'})
         props.showAddTodoModal();
         console.log('currentState:');
         console.log(props.currentState);

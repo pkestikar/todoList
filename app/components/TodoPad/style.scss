@@ -1,6 +1,7 @@
 .todo-pad {
   max-width: 1500px;
   max-height: 680px;
+  overflow: hidden;
   width: 80%;
   height: 80%;
   @include breakpoint(small down) {
