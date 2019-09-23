@@ -30,7 +30,9 @@ const TodoPad = (props) => {
                         {props.todoList.map(todo => {
                             return (
                                 <TaskCard
-                                    taskText={todo.title}
+                                    taskTitle={todo.title}
+                                    taskDescription={todo.description}
+                                    image={todo.image}
                                     category={'home'}
                                     key={`${Math.random() * 1000}`}
                                 />

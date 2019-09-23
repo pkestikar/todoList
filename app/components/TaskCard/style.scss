@@ -33,6 +33,12 @@
     .task-text {
       font-weight: bold;
     }
+    .task-description {
+      font-size: 0.8rem;
+      margin-top: 0.3rem;
+      max-height: 4rem;
+      overflow: hidden;
+    }
     .category-icon {
       position: absolute;
       bottom: 12px;
