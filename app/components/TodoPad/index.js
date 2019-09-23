@@ -49,7 +49,7 @@ const TodoPad = (props) => {
 const mapStateToProps = state => {
     return {
         state: state,
-        todoList: state.todoList
+        todoList: state.todoList.data
     }
 };
 

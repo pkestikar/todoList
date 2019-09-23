@@ -18,11 +18,16 @@ const AddTodoModal = props => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const itemData = {
-            'title': taskTitle
-        };
+        const itemData = [
+            {
+                title: taskTitle,
+                description: taskDescription,
+                image: 'house'
+            }
+        ];
         props.addItem(itemData);
         console.log('Submitted!');
+        props.hideAddTodoModal();
     };
 
     const handleInputChange = (e, updateFunction) => {
