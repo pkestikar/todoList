@@ -1,4 +1,4 @@
-import {ADD_ITEM} from "../constants";
+import { ADD_ITEM, REMOVE_ITEM } from "../constants";
 
 const initialState = {
     data: [
@@ -9,14 +9,6 @@ const initialState = {
         },
         {
             title: 'Buy tickets to something',
-            image: 'house'
-        },
-        {
-            title: 'Get a haircut you filthy',
-            image: 'house'
-        },
-        {
-            title: 'Get a haircut you filthy',
             image: 'house'
         },
         {

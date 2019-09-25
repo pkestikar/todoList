@@ -15,7 +15,10 @@ const TaskCard = (props) => {
                     {props.taskDescription}
                 </div>
                 <span className="category-icon">
-                    <Icon style={{ margin: '0.3rem' }} icon={'plane'} size={'100%'}/>
+                    <Icon icon={'plane'} size={'17px'}/>
+                </span>
+                <span className="delete-task">
+                    <Icon icon={'delete'} size={'17px'}/>
                 </span>
             </div>
         </div>

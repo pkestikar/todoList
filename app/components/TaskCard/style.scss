@@ -1,3 +1,15 @@
+@mixin icon-container() {
+  position: absolute;
+  bottom: 12px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
 .task-card {
   height: 8.5rem;
   //width: 30rem;
@@ -40,15 +52,18 @@
       overflow: hidden;
     }
     .category-icon {
-      position: absolute;
-      bottom: 12px;
-      height: 22px;
-      width: 22px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 4px;
+      @include icon-container();
+    }
+    .delete-task {
+      @include icon-container();
+      right: 12px;
+      cursor: pointer;
+    }
+    .delete-task:hover {
+      @include hover-shadows();
+    }
+    .delete-task:active {
+      @include active-shadows();
     }
   }
 }
