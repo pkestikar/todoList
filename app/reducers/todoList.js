@@ -15,7 +15,7 @@ const initialState = {
         },
         {
             id: 3,
-            title: 'Get a haircut you filthy',
+            title: 'Get a haircut',
             image: 'house'
         }
     ]
