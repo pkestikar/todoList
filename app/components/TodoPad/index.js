@@ -34,7 +34,8 @@ const TodoPad = (props) => {
                                     taskDescription={todo.description}
                                     image={todo.image}
                                     category={'home'}
-                                    key={`${Math.random() * 1000}`}
+                                    id={todo.id}
+                                    key={`${todo.id}`}
                                 />
                             )
                         })

@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import Icon from 'Components/Icon';
+import { connect } from 'react-redux';
+import { todoListRemove } from "Actions/todoList";
 
 const TaskCard = (props) => {
+
+    const deleteTask = id => {
+        props.todoListRemove(id);
+    };
+
     return (
         <div className={`task-card`}>
             <div className="task-image">
@@ -17,7 +24,7 @@ const TaskCard = (props) => {
                 <span className="category-icon">
                     <Icon icon={'plane'} size={'17px'}/>
                 </span>
-                <span className="delete-task">
+                <span className="delete-task" onClick={() => deleteTask(props.id)}>
                     <Icon icon={'delete'} size={'17px'}/>
                 </span>
             </div>
@@ -25,4 +32,16 @@ const TaskCard = (props) => {
     )
 };
 
-export default TaskCard;
+const mapStateToProps = state => {
+    return {
+
+    }
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        todoListRemove: (itemId) => dispatch(todoListRemove(itemId))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TaskCard);
