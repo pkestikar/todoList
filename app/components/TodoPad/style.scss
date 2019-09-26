@@ -39,8 +39,9 @@
         }
       }
       .the-list {
-        height: 123%;
+        //height: 123%;
         //width: 50%;
+        height: auto;
         position: relative;
         overflow-y: auto;
         overflow-x: hidden;

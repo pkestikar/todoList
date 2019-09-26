@@ -4,7 +4,7 @@ import Icon from 'Components/Icon';
 import {hideModal} from "../../actions/modal";
 import onClickOutside from 'react-onClickOutside';
 import Button from 'Components/Button';
-import { todoList } from "Actions/todoList";
+import { todoListAdd } from "Actions/todoList";
 
 const AddTodoModal = props => {
 
@@ -18,11 +18,17 @@ const AddTodoModal = props => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // const itemData = {
-        //     'title': taskTitle
-        // };
-        // props.addItem(itemData);
+        const itemData = [
+            {
+                id: Math.floor(Math.random() * Math.floor(1000)),
+                title: taskTitle,
+                description: taskDescription,
+                image: 'house'
+            }
+        ];
+        props.addItem(itemData);
         console.log('Submitted!');
+        props.hideAddTodoModal();
     };
 
     const handleInputChange = (e, updateFunction) => {
@@ -62,7 +68,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addItem: (itemData) => dispatch(todoList(itemData)),
+        addItem: (itemData) => dispatch(todoListAdd(itemData)),
         hideAddTodoModal: () => dispatch(hideModal('ADD_TODO_MODAL'))
     }
 };

@@ -30,9 +30,12 @@ const TodoPad = (props) => {
                         {props.todoList.map(todo => {
                             return (
                                 <TaskCard
-                                    taskText={todo.title}
+                                    taskTitle={todo.title}
+                                    taskDescription={todo.description}
+                                    image={todo.image}
                                     category={'home'}
-                                    key={`${Math.random() * 1000}`}
+                                    id={todo.id}
+                                    key={`${todo.id}`}
                                 />
                             )
                         })
@@ -47,7 +50,7 @@ const TodoPad = (props) => {
 const mapStateToProps = state => {
     return {
         state: state,
-        todoList: state.todoList
+        todoList: state.todoList.data
     }
 };
 

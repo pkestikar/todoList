@@ -29,13 +29,9 @@
 }
 
 .add-item-container:hover {
-  -webkit-box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
-  -moz-box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
-  box-shadow: 4px 0px 14px -6px rgba(0,0,0,0.28);
+  @include hover-shadows();
 }
 
 .add-item-container:active {
-  -webkit-box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
-  -moz-box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
-  box-shadow: 4px 0px 7px -6px rgba(0,0,0,0.28);
+  @include active-shadows();
 }
