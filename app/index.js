@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import TodoList from 'Components/TodoList';
 import { Provider } from 'react-redux';
 import store from './store/index';
-import ModalRoot from 'Components/Modals';
+import App from 'Containers/App';
 
 ReactDOM.render(
     <Provider store={store}>
-        <TodoList/>
-        <ModalRoot/>
+        <App />
     </Provider>,
     document.getElementById('root'));

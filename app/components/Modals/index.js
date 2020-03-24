@@ -21,4 +21,4 @@ const ModalRoot = ({ modalType, modalProps }) => {
     )
 };
 
-export default connect(state => state.modal )(ModalRoot);
+export default connect(state => state.modal)(ModalRoot);
